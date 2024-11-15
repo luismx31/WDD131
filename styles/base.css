@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 0;
+ }
+ 
+ header {
+    background-color: #7FA8C4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+ }
+ 
+ header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2C4A66;
+    justify-content: space-between;
+    padding:10px;
+   
+ }
+
+ header nav :hover{
+
+   color:aqua;
+
+ }
+ 
+ main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+ }
+ 
+ section {
+    width: 30%;
+    background-color: #D0E4F5;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .about-me img {
+    width: 100%;
+    border-radius: 5px;
+    float:right;
+ }
+ 
+ 
+ .mexico-content .flag {
+    width: 100px;
+    float:inline-end;
+    padding:10px;
+ }
+ 
+ footer {
+    background-color: #2C4A66;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+ }
+ 
+ footer p {
+    margin: 5px;
+ }
