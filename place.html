@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles/place-large.css">
-    <link rel="stylesheet" href="styles/place.css">
-    <script src="script/place.js" defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mexico - Luis Moreno</title>
-</head>
-<body>
-    <header>
-        <h1>Mexico</h1>
-    </header>
-    <main>
-        <picture>
-            <source srcset="images/mexico-" media="min-width: 900px">
-            <source srcset="images/mexico-small.webp" media="min-width:500px">
-            <img src="images/mexico-small.webp" alt="Mexico city" width="400" height="200">
-          </picture>
-       
-       
-    </main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Luis Moreno">
+        <meta name="author" content="Luis Moreno">
+        <title>Luis Moreno</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer async></script>
+    </head>
+    <body>
+        <header>
+            <h1>Mexico</h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/m" media="(min-width: 900px)">
+                <source srcset="" media="(min-width:500px)">
+                <img src="images/mexico-small.webp" alt="Mexico city" width="400" height="200">
+            </picture>
+            <section class="first">
+                <h2>Data</h2>
+                <ol>
+                    <li><b>Area:</b><span>km<sup>2</sup></span></li>
+                    <li><b>Population:</b><span>34344343</span></li>
+                    <li><b>Languages:</b><span>Spanish</span></li>
+                    <li><b>Currency:</b><span>Pesos</span></li>
+                    <li><b>Time zone:</b><span></span></li>
+                    <li><b>Calling code:</b><span>+686</span></li>
+                </ol>    
+            </section>
     
-</body>
+        <section class="second">
+                <div class="weather">
+                    
+    
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather icon">
+                <ol>
+                    <li>
+                        <b>Temperature:</b>
+                        <span>
+                            29
+                            <sup>o</sup>
+                             C
+                        </span>
+                    </li>
+                    <li>
+                        <b>Conditions:</b>
+                        <span>Mostly Sunny</span>
+                    </li>
+                    <li>
+                        <b>Wind:</b>
+                        <span> 13 km/h</span>
+                    </li>
+                    <li>
+                        <b>Wind Chill:</b>
+                        <span id="windchill">3.5
+                            <sup>o</sup>
+                             C
+                        </span>
+                    </li>
+                </ol>
+                
+                </div>
+    
+              </section>     
+        </main>
+        <footer>
+            <p>
+                &copy; <span id="Year"></span> 🌴 Luis Moreno 🌴
+            </p>
+            <p class="lastMod">{Last Modification: <span id="lastModified"></span>}</p>
+        </footer>
+    
+    </body>
+
 </html>
+
+

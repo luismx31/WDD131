@@ -1,0 +1,68 @@
+@media screen and (min-width:650px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        width: 100%;
+    }
+    
+    header h1 {
+        padding: 1rem 0;
+        display: block;
+        font-size: 3rem;
+    }
+
+
+    main picture {
+        grid-column: 1 / 3;
+        width: auto;
+        height: auto;
+    }
+
+    section {
+        position: absolute;
+        background-color: white;
+        width: max-content;
+    }
+
+    section h2 {
+        width: 250px;
+        background-color: rgb(181, 1, 1);
+        color: white;
+        padding: 12px 30px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 0 -50px;
+        font-size: 1.8rem;
+
+    }
+
+    .first {
+        top: 5vh;
+        margin: 0 2rem;
+    }
+
+    .second {
+        bottom: 20px;
+        right: 70px;
+    }
+
+    .second h2::after {
+        content: "⛅";
+        text-align: right;
+        font-size: 01.8rem;
+    }
+
+    .second img {
+        display: none;
+    }
+    footer {
+        display: block;
+    }
+}
