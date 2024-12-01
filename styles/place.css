@@ -115,6 +115,6 @@ footer {
 
 .lastMod {
     color: var(--additional-color);
-    font-size: smaller;
+    font-size: 15px;
     margin-top: 10px;
 }

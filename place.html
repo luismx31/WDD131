@@ -8,7 +8,7 @@
         <title>Luis Moreno</title>
         <link rel="stylesheet" href="styles/place.css">
         <link rel="stylesheet" href="styles/place-large.css">
-        <script src="scripts/place.js" defer async></script>
+        <script src="script/place.js" defer></script>
     </head>
     <body>
         <header>
@@ -16,63 +16,35 @@
         </header>
         <main>
             <picture>
-                <source srcset="images/m" media="(min-width: 900px)">
-                <source srcset="" media="(min-width:500px)">
+                <source srcset="images/mexico-large.webp" media="(min-width: 900px)">
+                <source srcset="images/mexico-medium.webp" media="(min-width:500px)">
                 <img src="images/mexico-small.webp" alt="Mexico city" width="400" height="200">
             </picture>
-            <section class="first">
+            <section class="data">
                 <h2>Data</h2>
                 <ol>
-                    <li><b>Area:</b><span>km<sup>2</sup></span></li>
-                    <li><b>Population:</b><span>34344343</span></li>
+                    <li><b>Area:</b><span>1,972,550 km<sup>2</sup></span></li>
+                    <li><b>Population:</b><span>129,200,000</span></li>
                     <li><b>Languages:</b><span>Spanish</span></li>
                     <li><b>Currency:</b><span>Pesos</span></li>
-                    <li><b>Time zone:</b><span></span></li>
-                    <li><b>Calling code:</b><span>+686</span></li>
+                    <li><b>Time zone:</b><span>GMT/UTC</span></li>
+                    <li><b>Calling code:</b><span>+52</span></li>
                 </ol>    
             </section>
     
-        <section class="second">
-                <div class="weather">
-                    
-    
+            <section class="weather">
                 <h2>Weather</h2>
                 <img src="images/weather-icon.svg" alt="weather icon">
                 <ol>
-                    <li>
-                        <b>Temperature:</b>
-                        <span>
-                            29
-                            <sup>o</sup>
-                             C
-                        </span>
-                    </li>
-                    <li>
-                        <b>Conditions:</b>
-                        <span>Mostly Sunny</span>
-                    </li>
-                    <li>
-                        <b>Wind:</b>
-                        <span> 13 km/h</span>
-                    </li>
-                    <li>
-                        <b>Wind Chill:</b>
-                        <span id="windchill">3.5
-                            <sup>o</sup>
-                             C
-                        </span>
-                    </li>
+                    <li><b>Temperature:</b><span>29<sup>o</sup>C</span></li>
+                    <li><b>Conditions:</b><span>Mostly Sunny</span></li>
+                    <li><b>Wind:</b><span> 13 km/h</span></li>
+                    <li><b>Wind Chill:</b><span id="windchill">3.5<sup>o</sup>C</span></li>
                 </ol>
-                
-                </div>
-    
-              </section>     
+            </section>     
         </main>
-        <footer>
-            <p>
-                &copy; <span id="Year"></span> 🌴 Luis Moreno 🌴
-            </p>
-            <p class="lastMod">{Last Modification: <span id="lastModified"></span>}</p>
+        <footer><p>&copy; <span id="year"></span> 🌴 Luis Moreno 🌴</p>
+        <p class="lastMod">Last Modification: <span id="lastModified"></span></p>
         </footer>
     
     </body>

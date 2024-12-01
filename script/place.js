@@ -1,7 +1,7 @@
-// Display windchill factor in the 
+// Windchill factor //
 
-let T = 33;
-let vs = 5;
+let T = 29;
+let vs = 13;
 let windChill;
 
 if (T < 10 && vs > 4.8) {
@@ -9,27 +9,14 @@ if (T < 10 && vs > 4.8) {
 } else {
     document.querySelector("#windChill").innerHTML = "N/A";
 }
-
-
 // Function to calculate windchill
 
 function calculateWincdChill(T, vs) {
-    windChill = 12.12 + (0.6215 * T) - (11.37 * Math.pow(vs, 0.16)) + (0.3965 * T * Math.pow(vs, 0.16));
-    return windChill.toFixed(2)
+    windChill = 13.12 + (0.6215 * T) - (11.37 * Math.pow(vs, 0.16)) + (0.3965 * T * Math.pow(vs, 0.16));
+    return windChill.toFixed(1)
 }
 
-// Footer Script to display last modification timestamp
-const today = new Date();
-const currentYear = document.getElementById("Year");
-
-// Display the current year in the footer section
-currentYear.innerHTML = today.getFullYear();
-
-// Display last modified date
-const lastModifiedDate = document.getElementById("lastModified");
-
-// Display the current year in the footer section
-lastModifiedDate.innerHTML = document.lastModified;
-
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
 
 
