@@ -16,7 +16,9 @@ function calculateWincdChill(T, vs) {
     return windChill.toFixed(1)
 }
 
-document.getElementById('currentYear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
 
+const year = document.querySelector("year");
+year.textContent = new Date().getFullYear();
 
+const lastModified = document.getElementById("lastModified")
+lastModified.textContent = document.lastModified;
